@@ -167,7 +167,7 @@ def preprocess_data(images, labels):
     # Create one-hot encoded labels
     processed_labels = np.zeros((len(labels), 10))
     for i, label in enumerate(labels):
-        processed_labels[i, label] = 0.99 # Use 0.99 instead of 1
+        processed_labels[i, label] = 1.0
     
     return processed_images, processed_labels
 
